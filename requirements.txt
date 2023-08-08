@@ -1,0 +1,10 @@
+dhg==0.9.3
+imbalanced_learn==0.9.1
+imblearn==0.0
+numpy==1.23.3
+pandas==1.5.0
+PyYAML==6.0
+scikit_learn==1.2.1
+scipy==1.10
+torch==1.12.1
+cipy==1.9.1

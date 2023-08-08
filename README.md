@@ -47,8 +47,3 @@ python run_CPDP.py
 - Please check the folder ./result_WPDP , ./result_CPDP or ./result_CVDP
 
 
-
-Contacts
-===============
-
-- Due to anonymity requested, we will publish contact details in the future.

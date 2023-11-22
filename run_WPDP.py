@@ -34,7 +34,7 @@ def HG_supervised_embedding(X, y, train_index, test_index, G):
     G = G.to(device)
 
     # model initialization
-    HGNN_model = HGNN(in_ch=X.shape[1], n_class=2, n_hid=cfg['n_hid'], dropout=cfg['drop_out'])
+    HGNN_model = HGNN(in_ch=X.shape[1], n_hid=cfg['n_hid'], dropout=cfg['drop_out'])
 
     HGNN_model = HGNN_model.to(device)
 
@@ -190,7 +190,7 @@ opt_K_neigs = [5]
 opt_n_hid = [64]
 opt_lr = [0.001]
 opt_drop_out = [0]
-opt_max_epoch = [200]
+opt_max_epoch = [100]
 
 import itertools
 

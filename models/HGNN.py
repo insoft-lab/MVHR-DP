@@ -7,7 +7,7 @@ import numpy as np
 
 
 class HGNN(nn.Module):
-    def __init__(self, in_ch, n_class, n_hid, dropout=0.5):
+    def __init__(self, in_ch, n_hid, dropout=0.5):
         """
                Args:
                    ``in_ch`` (``int``): :math:`C_{in}` is the number of input channels.
@@ -18,7 +18,11 @@ class HGNN(nn.Module):
         super(HGNN, self).__init__()
         self.dropout = dropout
         self.hgc1 = HGNNConv(in_ch, n_hid)
-        self.hgc2 = HGNNConv(n_hid, n_class)
+        self.linear1=nn.Linear(n_hid, 32)
+
+        self.linear2 = nn.Linear(32, 2)
+
+
 
     def forward(self, x, G):
         """The forward function.
@@ -30,9 +34,9 @@ class HGNN(nn.Module):
         x = F.relu(self.hgc1(x, G))  # (n_node, n_hid)
         x = F.dropout(x, self.dropout)  # (n_node, n_hid)
         x_embedding = x
-        x = self.hgc2(x, G)  # (n_node, n_class)
+        x = F.relu(self.linear1(x))
+        x=self.linear2(x)
         return x, x_embedding
-
 rate = 0.0
 
 class GradReverse(torch.autograd.Function):

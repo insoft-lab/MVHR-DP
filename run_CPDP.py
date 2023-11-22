@@ -39,18 +39,19 @@ def train_and_test(source_project, target_project, mode):
     if mode.find('_HGNN') != -1:
 
         # model initialization
-        HGNN_model = HGNN(in_channels=X_source.shape[1], num_classes=cfg['encoder'], hid_channels=cfg['n_hid'],
+        HGNN_model = HGNN(in_channels=X_source.shape[1], num_classes=cfg['n_hid'], hid_channels=cfg['n_hid'],
                           drop_rate=cfg['drop_out'])
         cls_model = nn.Sequential(
-            nn.Linear(cfg['encoder'], 2),
+            nn.Linear(cfg['n_hid'], 32),
+            nn.ReLU(),
+            nn.Linear(32, 2),
         ).to(device)
 
         domain_model = nn.Sequential(
             GRL(),
-            nn.Linear(cfg['encoder'], 40),
+            nn.Linear(cfg['n_hid'], 32),
             nn.ReLU(),
-            nn.Dropout(0),
-            nn.Linear(40, 2),
+            nn.Linear(32, 2),
         ).to(device)
 
         models = [HGNN_model, cls_model, domain_model]
@@ -175,25 +176,23 @@ for each_line in lines:
     projects.append(subject)
 
 # param opt
-opt_R1 = [0.6]
-opt_R2 = [0.8]
-opt_K_neigs = [100]
-opt_n_encoder = [16]
-opt_n_hid = [32]
+opt_R1 = [0.8]
+opt_R2 = [0.1]
+opt_K_neigs = [120]
+opt_n_hid = [64]
 opt_lr = [0.001]
 opt_drop_out = [0.5]
-opt_max_epoch = [200]
+opt_max_epoch = [250]
 
-for params_i in itertools.product(opt_R1, opt_R2, opt_K_neigs, opt_n_encoder, opt_n_hid, opt_lr, opt_drop_out,
+for params_i in itertools.product(opt_R1, opt_R2, opt_K_neigs, opt_n_hid, opt_lr, opt_drop_out,
                                   opt_max_epoch):
     cfg['R1'] = params_i[0]
     cfg['R2'] = params_i[1]
     cfg['K_neigs'] = params_i[2]
-    cfg['encoder'] = params_i[3]
-    cfg['n_hid'] = params_i[4]
-    cfg['lr'] = params_i[5]
-    cfg['drop_out'] = params_i[6]
-    cfg['max_epoch'] = params_i[7]
+    cfg['n_hid'] = params_i[3]
+    cfg['lr'] = params_i[4]
+    cfg['drop_out'] = params_i[5]
+    cfg['max_epoch'] = params_i[6]
 
     # Cross-project defect prediction
     for source_project in projects:

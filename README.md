@@ -44,5 +44,5 @@ python run_CPDP.py
 
 # Check experimental result
 
-- Please check the folder ./result_WPDP , ./result_CPDP or ./result_CVDP
+- Please check the folder ./result_WPDP , ./result_CPDP and ./result_CVDP
 

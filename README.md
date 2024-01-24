@@ -44,6 +44,6 @@ python run_CPDP.py
 
 # Check experimental result
 
-- Please check the generated experimental results folder [result_WPDP](result_WPDP) , [result_WPDP](result_CPDP) and [result_CVDP](result_CVDP)
-- Comparison results with all baseline methods [WPDP](results_comparation/WPDP.pdf), [CVDP](results_comparation/CVDP.pdf) and [CPDP](results_comparation/CPDP.pdf)
+- Please check the generated experimental results folder [result_WPDP](main/result_WPDP) , [result_WPDP](main/result_CPDP) and [result_CVDP](main/result_CVDP)
+- Comparison results with all baseline methods [WPDP](main/results_comparation/WPDP.pdf), [CVDP](main/results_comparation/CVDP.pdf) and [CPDP](main/results_comparation/CPDP.pdf)
 

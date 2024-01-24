@@ -44,5 +44,5 @@ python run_CPDP.py
 
 # Check experimental result
 
-- After running run_XXDP.py, you can check the generated experimental results in following folders: [result_WPDP](https://github.com/insoft-lab/MVHR-DP/tree/main/results_WPDP) , [result_CVDP](https://github.com/insoft-lab/MVHR-DP/tree/main/results_CVDP) and [result_CPDP](https://github.com/insoft-lab/MVHR-DP/tree/main/results_CPDP)
-- Due to space limitations of the paper submission, we present all comparison results here: [WPDP](https://github.com/insoft-lab/MVHR-DP/blob/main/results_comparison/WPDP.pdf), [CVDP](https://github.com/insoft-lab/MVHR-DP/blob/main/results_comparison/CVDP.pdf) and [CPDP](https://github.com/insoft-lab/MVHR-DP/blob/main/results_comparison/CPDP.pdf)
+- After running run_XXDP.py, you can check the generated experimental results in following folders: [result_WPDP](https://github.com/insoft-lab/MVHR-DP/tree/main/results_WPDP) , [result_CVDP](https://github.com/insoft-lab/MVHR-DP/tree/main/results_CVDP) and [result_CPDP](https://github.com/insoft-lab/MVHR-DP/tree/main/results_CPDP).
+- Due to space limitations of the paper submission, we present all comparison results here: [WPDP](https://github.com/insoft-lab/MVHR-DP/blob/main/results_comparison/WPDP.pdf), [CVDP](https://github.com/insoft-lab/MVHR-DP/blob/main/results_comparison/CVDP.pdf) and [CPDP](https://github.com/insoft-lab/MVHR-DP/blob/main/results_comparison/CPDP.pdf).

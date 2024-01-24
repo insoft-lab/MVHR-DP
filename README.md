@@ -45,5 +45,5 @@ python run_CPDP.py
 # Check experimental result
 
 - Please check the generated experimental results folder [result_WPDP](https://github.com/insoft-lab/MVHR-DP/tree/main/results_WPDP) , [result_WPDP](https://github.com/insoft-lab/MVHR-DP/tree/main/results_CVDP) and [result_CVDP](https://github.com/insoft-lab/MVHR-DP/tree/main/results_CPDP)
-- Comparison results with all baseline methods [WPDP](./results_comparation/WPDP.pdf), [CVDP](./results_comparation/CVDP.pdf) and [CPDP](./results_comparation/CPDP.pdf)
+- Comparison results with all baseline methods [WPDP](https://github.com/insoft-lab/MVHR-DP/blob/main/results_comparison/WPDP.pdf), [CVDP](https://github.com/insoft-lab/MVHR-DP/blob/main/results_comparison/CVDP.pdf) and [CPDP](https://github.com/insoft-lab/MVHR-DP/blob/main/results_comparison/CPDP.pdf)
 

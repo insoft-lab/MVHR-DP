@@ -28,19 +28,21 @@ pip install -r requirements.txt
 
 # Train and test
 
-If perform within-project defect prediction, run_WPDP.py. 
-
-If perform cross-version defect prediction, run_CVDP.py.
-
-If perform cross-project defect prediction, run_CPDP.py. 
-
+If perform within-project defect prediction
 ```
 python run_WPDP.py
+```
 
+If perform cross-version defect prediction
+```
 python run_CVDP.py
+```
 
+If perform cross-project defect prediction
+```
 python run_CPDP.py
 ```
+
 
 # Check experimental result
 

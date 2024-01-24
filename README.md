@@ -16,7 +16,7 @@ Before training MVHR-DP, we have to provide the features of the hypergraph nodes
 
 - Class Dependency Network: use to generate Complex Network Metric and code view supplementary information can be acquired via the publicly available API [Dependencyfinder](https://depfind.sourceforge.io/) (dependencies_edges.csv).
 
-We conduct experiments on ten open-source Java projects (a total of 29 versions). The metrics of the ten projects are saved in [data](https://github.com/insoft-lab/MVHR-DP/blob/main/data)
+We conduct experiments on ten open-source Java projects (a total of 29 versions). The metrics of the ten projects are saved in ./data/
 
 # Build running environment
 
@@ -44,6 +44,5 @@ python run_CPDP.py
 
 # Check experimental result
 
-- Please check the generated experimental results folder [result_WPDP](https://github.com/insoft-lab/MVHR-DP/tree/main/results_WPDP) , [result_CVDP](https://github.com/insoft-lab/MVHR-DP/tree/main/results_CVDP) and [result_CPDP](https://github.com/insoft-lab/MVHR-DP/tree/main/results_CPDP)
-- Comparison results with all baseline methods [WPDP](https://github.com/insoft-lab/MVHR-DP/blob/main/results_comparison/WPDP.pdf), [CVDP](https://github.com/insoft-lab/MVHR-DP/blob/main/results_comparison/CVDP.pdf) and [CPDP](https://github.com/insoft-lab/MVHR-DP/blob/main/results_comparison/CPDP.pdf)
-
+- After running run_XXDP.py, you can check the generated experimental results in following folders: [result_WPDP](https://github.com/insoft-lab/MVHR-DP/tree/main/results_WPDP) , [result_CVDP](https://github.com/insoft-lab/MVHR-DP/tree/main/results_CVDP) and [result_CPDP](https://github.com/insoft-lab/MVHR-DP/tree/main/results_CPDP)
+- Due to space limitations of the paper submission, we present all comparison results here: [WPDP](https://github.com/insoft-lab/MVHR-DP/blob/main/results_comparison/WPDP.pdf), [CVDP](https://github.com/insoft-lab/MVHR-DP/blob/main/results_comparison/CVDP.pdf) and [CPDP](https://github.com/insoft-lab/MVHR-DP/blob/main/results_comparison/CPDP.pdf)

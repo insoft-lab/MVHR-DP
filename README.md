@@ -16,7 +16,7 @@ Before training MVHR-DP, we have to provide the features of the hypergraph nodes
 
 - Class Dependency Network: use to generate Complex Network Metric and code view supplementary information can be acquired via the publicly available API [Dependencyfinder](https://depfind.sourceforge.io/) (dependencies_edges.csv).
 
-We conduct experiments on ten open-source Java projects (a total of 29 versions). The metrics of the ten projects are saved in ./data/
+We conduct experiments on ten open-source Java projects (a total of 29 versions). The metrics of the ten projects are saved in [data](https://github.com/insoft-lab/MVHR-DP/blob/main/data)
 
 # Build running environment
 
